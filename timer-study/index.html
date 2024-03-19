@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer para Estudo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+    <main class="mainContent">
+        <section>
+            <div class="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+
+            <div class="buttons">
+                <button data-action="toggleRunning" class="ph ph-play-circle"></button>
+                <button data-action="toggleRunning" class="ph ph-pause-circle"></button>
+                <button data-action="toggleStop" class="ph ph-stop-circle"></button>
+                <button data-action="addTime" class="ph ph-plus-circle"></button>
+                <button data-action="removeTime" class="ph ph-minus-circle"></button>
+            </div>
+        </section>
+
+        <section class="btnSounds">
+            <button data-action="musicForest" class="ph ph-tree"></button>
+            <button data-action="musicRain" class="ph ph-cloud-rain"></button>
+            <button data-action="musicCoffee" class="ph ph-coffee"></button>
+            <button data-action="musicFireplace" class="ph ph-fire"></button>
+        </section>
+    </main>
+</body>
+</html>
